@@ -25,7 +25,6 @@ Depending on your environment, you may also need a matching PyTorch install with
 The current training script expects CSV files under `dataset/` and uses a matching adjacency matrix file for each supported dataset:
 
 - `metr_la.csv` with `metr_la_adj.npz`
-- `bw.csv` with `bw_adj.csv`
 - `pems04.csv` with `pems04_adj.csv`
 - `pems08.csv` with `pems08_adj.csv`
 - `NYC_subway.csv` with `NYC_subway_adj.csv`
@@ -68,7 +67,7 @@ python run_main.py \
   --llm_model LLAMA \
   --llm_path /path/to/your/llama-model \
   --llm_dim 4096 \
-  --llm_train 8 \
+  --llm_train 4 \
   --llm_layers 16 \
   --itr 1 \
   --train_epochs 500 \
